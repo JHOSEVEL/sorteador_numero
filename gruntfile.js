@@ -57,6 +57,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
-    grunt.registerTask('default',['watch']);
-    grunt.registerTask('build',['less:prodution']);
+    grunt.registerTasks('default',['watch']);
+    grunt.registerTasks('build',['less:prodution']);
 }
