@@ -45,15 +45,8 @@ module.exports = function(grunt){
                     }
                 ]
             }
-        },
-        clean: ['prebuild'],
-        uglify: {
-            target: {
-                files: {
-                    'dis/scripts/main.min.js': 'src/scripts/main.js'
-                }
-            }
         }
+       
 
     })
 
@@ -71,5 +64,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.registerTask('default',['watch']);
-    grunt.registerTask('build',['less:prodution', 'uglify']);
+    grunt.registerTask('build',['less:prodution']);
 }
