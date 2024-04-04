@@ -7,7 +7,7 @@ module.exports = function(grunt){
                     'dev/style/main.css': 'src/style/main.less'
                 }
             },
-            prodution: {
+            production: {
                 opitions: {
                     compress: true,
                 },
@@ -58,5 +58,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-replace');
     grunt.registerTasks('default',['watch']);
-    grunt.registerTasks('build',['less:prodution']);
+    grunt.registerTask('build',['less:prodution']);
 }
